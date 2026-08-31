@@ -1,0 +1,18 @@
+factor,level,n,leaked,correct,none,premium
+Imbalance ratio,1.02-2.3,2870,0.8062,0.7436,,0.0626
+Imbalance ratio,2.33-6.0,2800,0.8687,0.6699,,0.1987
+Imbalance ratio,6.00-14.7,2730,0.956,0.7644,,0.1916
+Imbalance ratio,14.66-109.9,2800,0.9583,0.5135,,0.4448
+Classifier,5NN,1600,0.8826,0.6153,0.5981,0.2672
+Classifier,DecTree,1600,0.8755,0.6377,0.6379,0.2378
+Classifier,GradBoost,1600,0.917,0.7192,0.6935,0.1978
+Classifier,LogReg,1600,0.8279,0.59,0.5451,0.2379
+Classifier,RandForest,1600,0.9357,0.7237,0.6803,0.2119
+Classifier,SVM-RBF,1600,0.9067,0.6862,0.5846,0.2205
+Classifier,XGBoost,1600,0.9293,0.737,0.7174,0.1923
+Resampler,ADASYN,2590,0.9043,0.6633,,0.241
+Resampler,Borderline,2870,0.8949,0.6736,,0.2213
+Resampler,RandomOS,2870,0.8923,0.6766,,0.2156
+Resampler,SMOTE,2870,0.8949,0.6766,,0.2183
+Domain,HR,1610,0.826,0.5907,,0.2353
+Domain,benchmark,9590,0.9082,0.6865,,0.2217

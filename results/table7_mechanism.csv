@@ -1,0 +1,5 @@
+sampler,contam,premium
+ADASYN,0.6026,0.241
+Borderline,0.4639,0.2209
+RandomOS,0.7849,0.2163
+SMOTE,0.6928,0.218

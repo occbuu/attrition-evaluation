@@ -1,0 +1,42 @@
+name,domain,n,n_features,n_minority,imbalance_ratio,n_categorical,source,construction
+turnover_russia,HR,1129,50,558,1.02,43,Kaggle davinwijaya/employee-turnover,file: turnover.csv
+saudi_attrition,HR,1191,100,515,1.31,99,Mendeley Data 10.17632/6z2hty8php.1 (Alsaleh & Alsaleh 2025),file: Original Dataset of Employee Attrition.xlsx
+job_change_ds,HR,5000,62,1247,3.01,60,Kaggle arashnic/hr-analytics-job-change-of-data-scientists,file: aug_train.csv
+ibm_hr,HR,1470,44,237,5.2,21,Kaggle pavansubhasht/ibm-hr-analytics-attrition-dataset,file: HR-Employee-Attrition.csv
+hr_case_study,HR,4410,33,711,5.2,20,Kaggle vjchoudhary7/hr-analytics-case-study,file: general_data.csv
+healthcare_attr,HR,1676,40,199,7.42,17,Kaggle jpmiller/employee-attrition-for-healthcare,file: watson_healthcare_modified.csv
+bupa,benchmark,345,5,169,1.04,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+sonar,benchmark,208,60,97,1.14,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+credit_approval_australia,benchmark,690,15,307,1.25,3,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+spambase,benchmark,4601,57,1813,1.54,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+ionosphere,benchmark,351,33,126,1.79,1,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+magic,benchmark,5000,10,1758,1.84,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+tic_tac_toe,benchmark,958,9,332,1.89,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+titanic,benchmark,2207,8,711,2.1,1,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+credit_approval_germany,benchmark,1000,20,300,2.33,3,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+phoneme,benchmark,5000,5,1467,2.41,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+haberman,benchmark,306,3,81,2.78,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+dna,benchmark,3186,180,765,3.16,180,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 2 of 3
+adult,benchmark,5000,14,1196,3.18,1,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+contraceptive_method,benchmark,1473,9,333,3.42,3,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 1 of 3
+clean2,benchmark,5000,168,771,5.49,0,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+segmentation,benchmark,2310,18,330,6.0,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 3 of 7
+churn,benchmark,5000,20,707,6.07,2,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+dermatology,benchmark,366,34,49,6.47,1,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 4 of 6
+ecoli,benchmark,327,6,35,8.34,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 4 of 5
+mfeat_karhunen,benchmark,2000,64,200,9.0,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 9 of 10
+optdigits,benchmark,5000,62,493,9.14,3,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 8 of 10
+satimage,benchmark,5000,36,486,9.29,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 4 of 6
+pendigits,benchmark,5000,16,480,9.42,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 3 of 10
+vowel,benchmark,990,13,90,10.0,2,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 7 of 11
+analcatdata_authorship,benchmark,841,70,55,14.29,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 2 of 4
+coil2000,benchmark,5000,85,298,15.78,5,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+hypothyroid,benchmark,3163,25,151,19.95,17,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+car_evaluation,benchmark,1728,6,65,25.58,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 3 of 4
+letter,benchmark,5000,16,184,26.17,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 26 of 26
+wine_quality_white,benchmark,4898,11,163,29.05,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 4 of 7
+ann_thyroid,benchmark,5000,21,115,42.48,15,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 1 of 3
+allhyper,benchmark,3771,27,79,46.73,19,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 2 of 4
+yeast,benchmark,1479,8,30,48.3,0,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 7 of 9
+dis,benchmark,3772,27,58,64.03,19,PMLB (Olson et al. 2017; Romano et al. 2021),binary
+allrep,benchmark,3772,27,34,109.94,19,PMLB (Olson et al. 2017; Romano et al. 2021),one-vs-rest on class 1 of 4
