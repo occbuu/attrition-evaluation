@@ -200,16 +200,12 @@ def check_recomputation() -> list[str]:
 # ---------------------------------------------------------------------------
 def main() -> int:
     sys.path.insert(0, str(CODE))
-    srcs = sorted(CODE.glob("Paper2*/build_paper2*.py"))
-    docs = [ROOT / "Paper2A" / "Paper2A_leakage_premium.docx",
-            ROOT / "Paper2B" / "Paper2B_leakcheck_JOSS.docx",
-            ROOT / "Paper2C" / "Paper2C_hr_attrition_evaluation.docx"]
+    srcs = [CODE / "build_manuscript.py"]
+    docs = []  # this archive ships code, not manuscripts
 
     fails = 0
     for label, problems in [("A  source (no hand-typed numbers)", check_source(srcs)),
-                            ("B  output (no unresolved placeholders)", check_output(docs)),
-                            ("C  cross-references (tables and figures)", check_crossrefs(docs)),
-                            ("D  recomputation from raw_results.csv", check_recomputation())]:
+                            ("B  recomputation from raw_results.csv", check_recomputation())]:
         if problems:
             fails += len(problems)
             print(f"\nFAIL  {label}  -- {len(problems)} problem(s)")

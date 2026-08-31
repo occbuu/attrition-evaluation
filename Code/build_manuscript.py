@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 """
-build_paper2C.py -- the applied paper, written for an HR analytics readership.
+build_manuscript.py -- HR-facing paper on evaluation protocol for attrition models.
 
 Target venue: a human-resource-management or information-systems journal with a
-quantitative readership. The methodological paper (2A) asks what governs the
-leakage premium in general; this one asks what an HR analytics team should
-conclude, and answers it on six employee-turnover datasets.
-
-It shares the corpus and the summary with 2A but is written from scratch, uses
-different figures and tables, and makes a different claim.
+quantitative readership.
 """
 from __future__ import annotations
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import numpy as np
 import pandas as pd
@@ -23,7 +18,7 @@ import literature
 from paperkit import Numbers, Paper, table_csv, fmt, ROOT
 from refs import Bib
 
-OUT = ROOT / "Paper2C" / "Paper2C_hr_attrition_evaluation.docx"
+OUT = ROOT / "output" / "manuscript.docx"
 
 
 def build() -> Path:
@@ -199,10 +194,10 @@ def build() -> Path:
         check the conclusions against Matthews correlation and average precision, which behave
         better under imbalance.""")
 
-    d.p("""These datasets are part of a larger corpus of {n_datasets} problems analysed in a
-        companion methodological study, which asks the general question of what governs the size
-        of the effect; the present paper is confined to the HR datasets and to what an HR
-        analytics function should do about it.""")
+    d.p("""These six datasets sit in a corpus of {n_datasets} public binary classification
+        problems; the remaining problems are used only as a reference distribution so that
+        attrition can be compared with other domains. The present paper is confined to the HR
+        datasets and to what an HR analytics function should do about the protocol.""")
 
     # =====================================================================
     d.h1("4  Results")
@@ -276,8 +271,8 @@ def build() -> Path:
         comparisons.""")
 
     d.p("""That is a narrower result than the wider benchmark literature would predict, and it is
-        worth being precise about why. Across the full corpus of {n_datasets} datasets in the
-        companion study, no resampling beat correctly-ordered resampling in
+        worth being precise about why. Across the full corpus of {n_datasets} datasets assembled
+        here, no resampling beat correctly-ordered resampling in
         {pct_none_beats_correct}% of matched comparisons; the sceptical case against
         rebalancing is strongest at high imbalance and in high dimensions, and the HR datasets
         are at neither extreme. On employee-turnover data of this kind, resampling the training
@@ -414,14 +409,11 @@ def build() -> Path:
     d.h1("Data and code availability")
     d.p("""All six datasets are public. The harmonisation code, the full experimental record and
         the machine-readable summary from which every number in this paper was inserted are
-        released together with the companion methodological study. Repository and archival DOI
-        to be inserted on acceptance.""")
+        in this repository. Archival DOI to be inserted on acceptance.""")
 
     d.h1("Declarations")
     d.p("""Funding: none. Competing interests: the authors declare none. Ethics approval: not
-        applicable; all datasets are public and de-identified. A companion methodological study
-        by the same authors analyses the same effect across a wider corpus and is under review;
-        it is cited here and has been supplied to the editor.""")
+        applicable; all datasets are public and de-identified.""")
 
     d.references(B.list())
     p = d.save(OUT)
