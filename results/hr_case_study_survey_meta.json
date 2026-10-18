@@ -1,0 +1,7 @@
+{
+  "n": 4410,
+  "n_features": 42,
+  "n_minority": 711,
+  "imbalance_ratio": 5.2,
+  "n_before_encode": 4410
+}

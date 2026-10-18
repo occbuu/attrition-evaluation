@@ -1,0 +1,5 @@
+subset,n_datasets,correct,leaked,premium,ci_low,ci_high
+All six public tables,6,0.5907,0.826,0.2353,0.2264,0.2438
+Employer-style tables (drop job_change_ds),5,0.6007,0.8317,0.231,0.2206,0.241
+"IBM-like schema (ibm_hr, healthcare_attr, hr_case_study)",3,0.5477,0.8975,0.3498,0.3417,0.3587
+job_change_ds only (labour-market mobility),1,0.5433,0.7989,0.2557,0.2481,0.263
